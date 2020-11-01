@@ -58,4 +58,15 @@ public class DataReceive extends ServerSocket {
             }
         }
     }
+
+    public static void main(String[] args){
+        try {
+            DataReceive server = new DataReceive();
+            String path = "src/server/File";
+            server.load(path);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
