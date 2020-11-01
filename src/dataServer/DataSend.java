@@ -64,11 +64,18 @@ public class DataSend extends Socket {
     public static void main(String[] args){
         try{
             String path = "src/dataProcess/";
-            DataSend client = new DataSend("127.0.0.1", 8888, path + "dblp.xml00");
+            String ip1 = "127.0.0.1", ip2 = "127.0.0.1", ip3 = "127.0.0.1";
+            DataSend client = new DataSend(ip1, 8888, path + "dblp.xml00");
             client.sendFile();
-            client = new DataSend("127.0.0.1", 8888, path + "dblp.xml01");
+            client = new DataSend(ip2, 8888, path + "dblp.xml01");
             client.sendFile();
-            client = new DataSend("127.0.0.1", 8888, path + "dblp.xml02");
+            client = new DataSend(ip3, 8888, path + "dblp.xml02");
+            client.sendFile();
+            client = new DataSend(ip1, 8888, path + "dblp.xml01");
+            client.sendFile();
+            client = new DataSend(ip2, 8888, path + "dblp.xml02");
+            client.sendFile();
+            client = new DataSend(ip3, 8888, path + "dblp.xml00");
             client.sendFile();
         } catch (Exception e) {
             e.printStackTrace();
