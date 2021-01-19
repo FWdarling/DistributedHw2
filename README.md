@@ -52,7 +52,7 @@
 
 #### 数据分发
 
-1. 将dataServer和dataProcess文件夹传到数据服务器上, 将server文件夹拷贝到每个存储机上
+1. 将dataServer和dataProcess文件夹传到数据服务器上, 将server文件夹拷贝到每个存储机上(SearchServer.java只需要一份， 重复的文件是为了单机多端口模拟多个端， 根据实际情况进行删减)
 2. 源文件dblp.xml放入src/dataProcess路径下,
 3. 修改上述路径下dataProcess.sh文件, 将remoteCount改为存储虚拟机个数,
 4. 运行该脚本进行文件切分
