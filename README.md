@@ -66,4 +66,4 @@
 1. 将client文件夹传输到查询服务器上
 2. 修改client/SearchClient.java中, main函数内部的ip为存储机ip(根据个数添加或删除代码)
 3. 先运行每个存储机的SearchServer.java文件, 在运行查询客户端的SearchClient.java文件
-4. 标准输出流会输出查询过程, 查询结果也会存放在1853204-hw2-q1.log日志中
+4. 标准输出流会输出查询过程, 查询结果也会存放在日志中
